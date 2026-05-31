@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/stylesheets/hstyle.css">
+    <script src="/javascripts/bot.js" defer></script>
+</head>
+
+<body class="show-chatbot">
+
+    <!-- Navbar -->
+    <nav class="nav">
+
+        <div class="brand">
+            <img src="/images/icon.avif" alt="JARVIS Logo">
+            <h2>J.A.R.V.I.S</h2>
+        </div>
+
+        <ul>
+            <li><a href="/hom">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="page-layout">
+
+        <!-- Left Side Content -->
+        <section class="hero-section">
+
+            <div class="hero-content">
+
+                <span class="tagline">
+                    AI POWERED ERP ASSISTANT
+                </span>
+
+                <h1>
+                    Meet J.A.R.V.I.S
+                </h1>
+
+                <p>
+                    Your intelligent academic assistant designed to answer
+                    student queries instantly. Get information about
+                    admissions, attendance, schedules, faculty, fees,
+                    examinations and much more.
+                </p>
+
+                <div class="quick-actions">
+
+                    <div class="action-card">
+                        <span class="material-icons">school</span>
+                        <h3>Admissions</h3>
+                    </div>
+
+                    <div class="action-card">
+                        <span class="material-icons">event_available</span>
+                        <h3>Attendance</h3>
+                    </div>
+
+                    <div class="action-card">
+                        <span class="material-icons">payments</span>
+                        <h3>Fees</h3>
+                    </div>
+
+                    <div class="action-card">
+                        <span class="material-icons">grading</span>
+                        <h3>Results</h3>
+                    </div>
+
+                    <div class="action-card">
+                        <span class="material-icons">groups</span>
+                        <h3>Faculty</h3>
+                    </div>
+
+                    <div class="action-card">
+                        <span class="material-icons">calendar_month</span>
+                        <h3>Schedules</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Chatbot Panel -->
+        <button class="chatbot-toggler">
+        <img src="/images/icon.avif" alt="JARVIS">
+        </button>
+
+        <aside class="chatbot-panel">
+
+            <div class="chatbot">
+
+                <header>
+
+                    <div class="chat-header">
+
+                        <div class="bot-profile">
+                            <img src="/images/icon.avif" alt="JARVIS">
+                            <div>
+                                <h2>J.A.R.V.I.S</h2>
+                                <span>Online</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </header>
+
+                <ul class="chatbox">
+
+                    <li class="chat incoming">
+
+                        <span>
+                            <img src="/images/icon.avif" alt="JARVIS">
+                        </span>
+
+                        <p>
+                            Hello 👋<br>
+                            I am J.A.R.V.I.S.<br>
+                            How can I assist you today?
+                        </p>
+
+                    </li>
+
+                </ul>
+
+                <div class="chat-input">
+
+                    <textarea
+                        placeholder="Ask me anything..."
+                        required>
+                    </textarea>
+
+                    <span class="material-icons">
+                        send
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</body>
+</html>

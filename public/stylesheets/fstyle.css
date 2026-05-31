@@ -1,0 +1,222 @@
+ /*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(background.jpg);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    background-color: rgb(178, 174, 174);
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(42, 42, 172);
+    border-style: solid;
+    border-color: white;
+    border-width: 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+    */
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1s ease-out; /* Animation for fade-in effect */
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styling for the login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+    padding: 40px;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    animation: zoomIn 1s ease-out forwards; /* Animation for zoom-in effect */
+}
+
+/* Animation for zoom-in */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Header styling */
+h1 {
+    background-color: rgb(178, 174, 174);
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    animation: slideInFromTop 1s ease-out; /* Animation for header slide-in */
+}
+
+/* Animation for header slide-in */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Label styling */
+form label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+    animation: fadeInLabel 1s ease-out forwards;
+}
+
+/* Animation for label fade-in */
+@keyframes fadeInLabel {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Input field styling */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease; /* Smooth focus transition */
+}
+
+form input:focus {
+    border-color: #4285f4;
+    box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+}
+
+/* Button styling */
+button {
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: rgb(42, 42, 172);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    animation: fadeInButton 1s ease-out forwards; /* Animation for button fade-in */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: darkblue;
+    transform: translateY(-3px); /* Button lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for button fade-in */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
