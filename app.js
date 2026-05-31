@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+require("dotenv").config();
 
 var session =require("express-session")
 
@@ -18,7 +19,7 @@ app.set('view engine', 'ejs');
 app.use(session({
   resave:false,
   saveUninitialized:false,
-  secret:"wowoh"
+  secret:process.env.SESSION_SECRET
 }))
 
 app.use(logger('dev'));

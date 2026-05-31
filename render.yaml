@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: erp-chatbot
+    runtime: node
+    plan: free
+
+    buildCommand: npm install
+    startCommand: npm start
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: MongoDB_URI
+        sync: false
+
+      - key: GEMINI_API_KEY
+        sync: false
+
+      - key: SESSION_SECRET
+        sync: false
